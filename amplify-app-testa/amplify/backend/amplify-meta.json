@@ -26,8 +26,17 @@
             }
           },
           "additionalAuthenticationProviders": []
-        }
-      }
+        },
+        "GraphQLAPIIdOutput": "j45rd5ckhzabljanhrncapos7y",
+        "GraphQLAPIEndpointOutput": "https://2ncpel4mgjbvpn4ak54p7esrbm.appsync-api.us-east-2.amazonaws.com/graphql",
+        "GraphQLAPIKeyOutput": "da2-2vqe23sk7vakdfp2kl3wbupqxm"
+      },
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-amplifyapptesta-main-33555-deployment/amplify-cfn-templates/api/cloudformation-template.json",
+        "logicalId": "apiRestaurantAPI"
+      },
+      "lastPushTimeStamp": "2021-04-26T01:43:45.758Z",
+      "lastPushDirHash": "aM+pWT9//afGR6UbsaE8DXCxvoI="
     }
   },
   "auth": {
@@ -35,7 +44,21 @@
       "service": "Cognito",
       "providerPlugin": "awscloudformation",
       "dependsOn": [],
-      "customAuth": false
+      "customAuth": false,
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-amplifyapptesta-main-33555-deployment/amplify-cfn-templates/auth/amplifyapptesta514770ae-cloudformation-template.yml",
+        "logicalId": "authamplifyapptesta514770ae"
+      },
+      "lastPushTimeStamp": "2021-04-26T01:43:45.758Z",
+      "output": {
+        "UserPoolId": "us-east-2_AbS9JzLmi",
+        "AppClientIDWeb": "5vma05o2ok3irtpfboi36mhbor",
+        "AppClientID": "5bpeh2ep3sh9l8366pqfuj1jln",
+        "IdentityPoolId": "us-east-2:0c9698fc-57ab-42f7-89eb-14746ac0692b",
+        "IdentityPoolName": "amplifyapptesta514770ae_identitypool_514770ae__main",
+        "UserPoolName": "amplifyapptesta514770ae_userpool_514770ae"
+      },
+      "lastPushDirHash": "AIJS0ovXY5zSzaKF9zpIcDGKW/c="
     }
   },
   "hosting": {}

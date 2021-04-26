@@ -71,22 +71,22 @@
     "apiRestaurantAPI": {
       "Type": "AWS::CloudFormation::Stack",
       "Properties": {
-        "TemplateURL": "https://s3.amazonaws.com/amplify-amplifyapptesta-dev-212007-deployment/amplify-cfn-templates/api/cloudformation-template.json",
+        "TemplateURL": "https://s3.amazonaws.com/amplify-amplifyapptesta-main-33555-deployment/amplify-cfn-templates/api/cloudformation-template.json",
         "Parameters": {
           "CreateAPIKey": 1,
           "AppSyncApiName": "RestaurantAPI",
           "DynamoDBBillingMode": "PAY_PER_REQUEST",
           "DynamoDBEnableServerSideEncryption": false,
-          "S3DeploymentBucket": "amplify-amplifyapptesta-dev-212007-deployment",
+          "S3DeploymentBucket": "amplify-amplifyapptesta-main-33555-deployment",
           "S3DeploymentRootKey": "amplify-appsync-files/6f8dd039a74f9a2afdec85733cb5ae6232d8a5e4",
-          "env": "dev"
+          "env": "main"
         }
       }
     },
     "authamplifyapptesta514770ae": {
       "Type": "AWS::CloudFormation::Stack",
       "Properties": {
-        "TemplateURL": "https://s3.amazonaws.com/amplify-amplifyapptesta-dev-212007-deployment/amplify-cfn-templates/auth/amplifyapptesta514770ae-cloudformation-template.yml",
+        "TemplateURL": "https://s3.amazonaws.com/amplify-amplifyapptesta-main-33555-deployment/amplify-cfn-templates/auth/amplifyapptesta514770ae-cloudformation-template.yml",
         "Parameters": {
           "identityPoolName": "amplifyapptesta514770ae_identitypool_514770ae",
           "allowUnauthenticatedIdentities": false,
@@ -129,18 +129,7 @@
           "serviceName": "Cognito",
           "usernameCaseSensitive": false,
           "dependsOn": "",
-          "env": "dev"
-        }
-      }
-    },
-    "hostingamplifyhosting": {
-      "Type": "AWS::CloudFormation::Stack",
-      "Properties": {
-        "TemplateURL": "https://s3.amazonaws.com/amplify-amplifyapptesta-dev-212007-deployment/amplify-cfn-templates/hosting/amplifyhosting-template.json",
-        "Parameters": {
-          "appId": "d2jagw7iufvhlz",
-          "type": "manual",
-          "env": "dev"
+          "env": "main"
         }
       }
     },
