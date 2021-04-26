@@ -1,15 +1,15 @@
 {
   "providers": {
     "awscloudformation": {
-      "AuthRoleName": "amplify-amplifyapptesta-main-33555-authRole",
-      "UnauthRoleArn": "arn:aws:iam::348245359840:role/amplify-amplifyapptesta-main-33555-unauthRole",
-      "AuthRoleArn": "arn:aws:iam::348245359840:role/amplify-amplifyapptesta-main-33555-authRole",
+      "AuthRoleName": "amplify-amplifyapptesta-master-234057-authRole",
+      "UnauthRoleArn": "arn:aws:iam::348245359840:role/amplify-amplifyapptesta-master-234057-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::348245359840:role/amplify-amplifyapptesta-master-234057-authRole",
       "Region": "us-east-2",
-      "DeploymentBucketName": "amplify-amplifyapptesta-main-33555-deployment",
-      "UnauthRoleName": "amplify-amplifyapptesta-main-33555-unauthRole",
-      "StackName": "amplify-amplifyapptesta-main-33555",
-      "StackId": "arn:aws:cloudformation:us-east-2:348245359840:stack/amplify-amplifyapptesta-main-33555/c2a5c690-a62f-11eb-827b-069c988534ce",
-      "AmplifyAppId": "d37o8adxpbzu8v"
+      "DeploymentBucketName": "amplify-amplifyapptesta-master-234057-deployment",
+      "UnauthRoleName": "amplify-amplifyapptesta-master-234057-unauthRole",
+      "StackName": "amplify-amplifyapptesta-master-234057",
+      "StackId": "arn:aws:cloudformation:us-east-2:348245359840:stack/amplify-amplifyapptesta-master-234057/199dc990-a6d8-11eb-a63b-062d48910046",
+      "AmplifyAppId": "d3g5l9ga47gapp"
     }
   },
   "api": {
@@ -27,15 +27,15 @@
           },
           "additionalAuthenticationProviders": []
         },
-        "GraphQLAPIIdOutput": "j45rd5ckhzabljanhrncapos7y",
-        "GraphQLAPIEndpointOutput": "https://2ncpel4mgjbvpn4ak54p7esrbm.appsync-api.us-east-2.amazonaws.com/graphql",
-        "GraphQLAPIKeyOutput": "da2-2vqe23sk7vakdfp2kl3wbupqxm"
+        "GraphQLAPIIdOutput": "xmzfagxcwveg5gk4nobjrucpxy",
+        "GraphQLAPIEndpointOutput": "https://a7kxfabvlnd2tpom7uzhqrtnfq.appsync-api.us-east-2.amazonaws.com/graphql",
+        "GraphQLAPIKeyOutput": "da2-6wonhevgyfcixmnj7fd5zbfa34"
       },
       "providerMetadata": {
-        "s3TemplateURL": "https://s3.amazonaws.com/amplify-amplifyapptesta-main-33555-deployment/amplify-cfn-templates/api/cloudformation-template.json",
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-amplifyapptesta-master-234057-deployment/amplify-cfn-templates/api/cloudformation-template.json",
         "logicalId": "apiRestaurantAPI"
       },
-      "lastPushTimeStamp": "2021-04-26T20:56:57.091Z",
+      "lastPushTimeStamp": "2021-04-26T21:45:51.078Z",
       "lastPushDirHash": "aM+pWT9//afGR6UbsaE8DXCxvoI="
     }
   },
@@ -46,16 +46,16 @@
       "dependsOn": [],
       "customAuth": false,
       "providerMetadata": {
-        "s3TemplateURL": "https://s3.amazonaws.com/amplify-amplifyapptesta-main-33555-deployment/amplify-cfn-templates/auth/amplifyapptesta514770ae-cloudformation-template.yml",
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-amplifyapptesta-master-234057-deployment/amplify-cfn-templates/auth/amplifyapptesta514770ae-cloudformation-template.yml",
         "logicalId": "authamplifyapptesta514770ae"
       },
-      "lastPushTimeStamp": "2021-04-26T20:56:57.092Z",
+      "lastPushTimeStamp": "2021-04-26T21:45:51.078Z",
       "output": {
-        "UserPoolId": "us-east-2_AbS9JzLmi",
-        "AppClientIDWeb": "5vma05o2ok3irtpfboi36mhbor",
-        "AppClientID": "5bpeh2ep3sh9l8366pqfuj1jln",
-        "IdentityPoolId": "us-east-2:0c9698fc-57ab-42f7-89eb-14746ac0692b",
-        "IdentityPoolName": "amplifyapptesta514770ae_identitypool_514770ae__main",
+        "UserPoolId": "us-east-2_G6kfIRfdw",
+        "AppClientIDWeb": "3f5d5m1i5l8vo11hb6eij99mcn",
+        "AppClientID": "au1a0uc7qtvd0tipmieo9um5n",
+        "IdentityPoolId": "us-east-2:792d2683-1f31-4921-84f6-76b9199e7efb",
+        "IdentityPoolName": "amplifyapptesta514770ae_identitypool_514770ae__master",
         "UserPoolName": "amplifyapptesta514770ae_userpool_514770ae"
       },
       "lastPushDirHash": "AIJS0ovXY5zSzaKF9zpIcDGKW/c="
