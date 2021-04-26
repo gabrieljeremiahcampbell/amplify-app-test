@@ -35,7 +35,7 @@
         "s3TemplateURL": "https://s3.amazonaws.com/amplify-amplifyapptesta-master-234057-deployment/amplify-cfn-templates/api/cloudformation-template.json",
         "logicalId": "apiRestaurantAPI"
       },
-      "lastPushTimeStamp": "2021-04-26T21:54:13.061Z",
+      "lastPushTimeStamp": "2021-04-26T21:59:06.969Z",
       "lastPushDirHash": "aM+pWT9//afGR6UbsaE8DXCxvoI="
     }
   },
@@ -49,7 +49,7 @@
         "s3TemplateURL": "https://s3.amazonaws.com/amplify-amplifyapptesta-master-234057-deployment/amplify-cfn-templates/auth/amplifyapptesta514770ae-cloudformation-template.yml",
         "logicalId": "authamplifyapptesta514770ae"
       },
-      "lastPushTimeStamp": "2021-04-26T21:54:13.063Z",
+      "lastPushTimeStamp": "2021-04-26T21:59:06.970Z",
       "output": {
         "UserPoolId": "us-east-2_G6kfIRfdw",
         "AppClientIDWeb": "3f5d5m1i5l8vo11hb6eij99mcn",
