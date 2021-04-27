@@ -5,7 +5,7 @@
   "javascript": {
     "framework": "angular",
     "config": {
-      "SourceDir": "amplify-app-test/src",
+      "SourceDir": "src",
       "DistributionDir": "dist/amplify-app-test",
       "BuildCommand": "npm run-script build",
       "StartCommand": "ng serve"
