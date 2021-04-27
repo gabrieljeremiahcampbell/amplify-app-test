@@ -1,5 +1,4 @@
 {
-  "projectPath": "/home/gabriel/vscode-projects/aws-amplify/amplify-app-testa/amplify-app-testa",
-  "defaultEditor": "vscode",
-  "envName": "main"
+  "projectPath": "/home/gabriel/vscode-projects/aws-amplify/amplify-app-test/amplify-app-test",
+  "envName": "dev"
 }

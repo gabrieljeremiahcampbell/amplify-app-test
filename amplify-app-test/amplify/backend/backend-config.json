@@ -9,7 +9,7 @@
             "authenticationType": "API_KEY",
             "apiKeyConfig": {
               "apiKeyExpirationDays": 7,
-              "description": "demo"
+              "description": "backendtestkey"
             }
           },
           "additionalAuthenticationProviders": []
@@ -18,12 +18,11 @@
     }
   },
   "auth": {
-    "amplifyapptesta514770ae": {
+    "amplifybackendtest54ee5767": {
       "service": "Cognito",
       "providerPlugin": "awscloudformation",
       "dependsOn": [],
       "customAuth": false
     }
-  },
-  "hosting": {}
+  }
 }

@@ -10,12 +10,12 @@ import { Restaurant } from '../types/restaurant';
 })
 
 export class AppComponent implements OnInit {
-  title = 'amplify-app-testa';
-  public createForm!: FormGroup;
+  title = 'amplify-app-test';
+  public createForm: FormGroup;
 
   /* declare restaurants variable */
-  restaurants!: Array<Restaurant> | null;
-  
+  restaurants: Array<Restaurant>;
+
   constructor(private api: APIService, private fb: FormBuilder) { }
 
   async ngOnInit() {
@@ -24,17 +24,15 @@ export class AppComponent implements OnInit {
       'description': ['', Validators.required],
       'city': ['', Validators.required]
     });
-
-    /* fetch restaurants when app loads */
     this.api.ListRestaurants().then(event => {
-    this.restaurants = event.items;
+      this.restaurants = event.items;
     });
-
-     /* subscribe to new restaurants being created */
+  
+    /* subscribe to new restaurants being created */
     this.api.OnCreateRestaurantListener.subscribe( (event: any) => {
-    const newRestaurant = event.value.data.onCreateRestaurant;
-    this.restaurants = [newRestaurant, ...this.restaurants];
-  });
+      const newRestaurant = event.value.data.onCreateRestaurant;
+      this.restaurants = [newRestaurant, ...this.restaurants];
+    });
   }
 
   public onCreate(restaurant: Restaurant) {

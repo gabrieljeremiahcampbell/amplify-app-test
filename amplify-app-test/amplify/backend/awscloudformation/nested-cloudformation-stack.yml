@@ -71,27 +71,27 @@
     "apiRestaurantAPI": {
       "Type": "AWS::CloudFormation::Stack",
       "Properties": {
-        "TemplateURL": "https://s3.amazonaws.com/amplify-amplifyapptesta-main-33555-deployment/amplify-cfn-templates/api/cloudformation-template.json",
+        "TemplateURL": "https://s3.amazonaws.com/amplify-amplifybackendtest-dev-11652-deployment/amplify-cfn-templates/api/cloudformation-template.json",
         "Parameters": {
           "CreateAPIKey": 1,
           "AppSyncApiName": "RestaurantAPI",
           "DynamoDBBillingMode": "PAY_PER_REQUEST",
           "DynamoDBEnableServerSideEncryption": false,
-          "S3DeploymentBucket": "amplify-amplifyapptesta-main-33555-deployment",
+          "S3DeploymentBucket": "amplify-amplifybackendtest-dev-11652-deployment",
           "S3DeploymentRootKey": "amplify-appsync-files/6f8dd039a74f9a2afdec85733cb5ae6232d8a5e4",
-          "env": "main"
+          "env": "dev"
         }
       }
     },
-    "authamplifyapptesta514770ae": {
+    "authamplifybackendtest54ee5767": {
       "Type": "AWS::CloudFormation::Stack",
       "Properties": {
-        "TemplateURL": "https://s3.amazonaws.com/amplify-amplifyapptesta-main-33555-deployment/amplify-cfn-templates/auth/amplifyapptesta514770ae-cloudformation-template.yml",
+        "TemplateURL": "https://s3.amazonaws.com/amplify-amplifybackendtest-dev-11652-deployment/amplify-cfn-templates/auth/amplifybackendtest54ee5767-cloudformation-template.yml",
         "Parameters": {
-          "identityPoolName": "amplifyapptesta514770ae_identitypool_514770ae",
+          "identityPoolName": "amplifybackendtest54ee5767_identitypool_54ee5767",
           "allowUnauthenticatedIdentities": false,
-          "resourceNameTruncated": "amplif514770ae",
-          "userPoolName": "amplifyapptesta514770ae_userpool_514770ae",
+          "resourceNameTruncated": "amplif54ee5767",
+          "userPoolName": "amplifybackendtest54ee5767_userpool_54ee5767",
           "autoVerifiedAttributes": "email",
           "mfaConfiguration": "OFF",
           "mfaTypes": "SMS Text Message",
@@ -107,10 +107,10 @@
           "userpoolClientRefreshTokenValidity": 30,
           "userpoolClientWriteAttributes": "email",
           "userpoolClientReadAttributes": "email",
-          "userpoolClientLambdaRole": "amplif514770ae_userpoolclient_lambda_role",
+          "userpoolClientLambdaRole": "amplif54ee5767_userpoolclient_lambda_role",
           "userpoolClientSetAttributes": false,
-          "sharedId": "514770ae",
-          "resourceName": "amplifyapptesta514770ae",
+          "sharedId": "54ee5767",
+          "resourceName": "amplifybackendtest54ee5767",
           "authSelections": "identityPoolAndUserPool",
           "authRoleArn": {
             "Fn::GetAtt": [
@@ -129,7 +129,7 @@
           "serviceName": "Cognito",
           "usernameCaseSensitive": false,
           "dependsOn": "",
-          "env": "main"
+          "env": "dev"
         }
       }
     },
@@ -137,7 +137,7 @@
       "DependsOn": [
         "AuthRole",
         "UnauthRole",
-        "authamplifyapptesta514770ae"
+        "authamplifybackendtest54ee5767"
       ],
       "Type": "AWS::Lambda::Function",
       "Properties": {
@@ -220,7 +220,7 @@
         },
         "idpId": {
           "Fn::GetAtt": [
-            "authamplifyapptesta514770ae",
+            "authamplifybackendtest54ee5767",
             "Outputs.IdentityPoolId"
           ]
         },

@@ -1,15 +1,15 @@
 {
   "providers": {
     "awscloudformation": {
-      "AuthRoleName": "amplify-amplifyapptesta-main-33555-authRole",
-      "UnauthRoleArn": "arn:aws:iam::348245359840:role/amplify-amplifyapptesta-main-33555-unauthRole",
-      "AuthRoleArn": "arn:aws:iam::348245359840:role/amplify-amplifyapptesta-main-33555-authRole",
+      "AuthRoleName": "amplify-amplifybackendtest-dev-11652-authRole",
+      "UnauthRoleArn": "arn:aws:iam::348245359840:role/amplify-amplifybackendtest-dev-11652-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::348245359840:role/amplify-amplifybackendtest-dev-11652-authRole",
       "Region": "us-east-2",
-      "DeploymentBucketName": "amplify-amplifyapptesta-main-33555-deployment",
-      "UnauthRoleName": "amplify-amplifyapptesta-main-33555-unauthRole",
-      "StackName": "amplify-amplifyapptesta-main-33555",
-      "StackId": "arn:aws:cloudformation:us-east-2:348245359840:stack/amplify-amplifyapptesta-main-33555/c2a5c690-a62f-11eb-827b-069c988534ce",
-      "AmplifyAppId": "d37o8adxpbzu8v"
+      "DeploymentBucketName": "amplify-amplifybackendtest-dev-11652-deployment",
+      "UnauthRoleName": "amplify-amplifybackendtest-dev-11652-unauthRole",
+      "StackName": "amplify-amplifybackendtest-dev-11652",
+      "StackId": "arn:aws:cloudformation:us-east-2:348245359840:stack/amplify-amplifybackendtest-dev-11652/7efa3320-a6e5-11eb-9fcd-02569c960934",
+      "AmplifyAppId": "d3dpvqgw9qtmjs"
     }
   },
   "api": {
@@ -22,44 +22,43 @@
             "authenticationType": "API_KEY",
             "apiKeyConfig": {
               "apiKeyExpirationDays": 7,
-              "description": "demo"
+              "description": "backendtestkey"
             }
           },
           "additionalAuthenticationProviders": []
         },
-        "GraphQLAPIIdOutput": "j45rd5ckhzabljanhrncapos7y",
-        "GraphQLAPIEndpointOutput": "https://2ncpel4mgjbvpn4ak54p7esrbm.appsync-api.us-east-2.amazonaws.com/graphql",
-        "GraphQLAPIKeyOutput": "da2-2vqe23sk7vakdfp2kl3wbupqxm"
+        "GraphQLAPIIdOutput": "3dz2uhkmyzhljfnt6ektdudyeu",
+        "GraphQLAPIEndpointOutput": "https://464dm5gj35dxlc32xz26ntibsa.appsync-api.us-east-2.amazonaws.com/graphql",
+        "GraphQLAPIKeyOutput": "da2-ignkd6gouvdvxpbshknzisomgy"
       },
       "providerMetadata": {
-        "s3TemplateURL": "https://s3.amazonaws.com/amplify-amplifyapptesta-main-33555-deployment/amplify-cfn-templates/api/cloudformation-template.json",
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-amplifybackendtest-dev-11652-deployment/amplify-cfn-templates/api/cloudformation-template.json",
         "logicalId": "apiRestaurantAPI"
       },
-      "lastPushTimeStamp": "2021-04-26T20:56:57.091Z",
+      "lastPushTimeStamp": "2021-04-27T00:31:20.900Z",
       "lastPushDirHash": "aM+pWT9//afGR6UbsaE8DXCxvoI="
     }
   },
   "auth": {
-    "amplifyapptesta514770ae": {
+    "amplifybackendtest54ee5767": {
       "service": "Cognito",
       "providerPlugin": "awscloudformation",
       "dependsOn": [],
       "customAuth": false,
       "providerMetadata": {
-        "s3TemplateURL": "https://s3.amazonaws.com/amplify-amplifyapptesta-main-33555-deployment/amplify-cfn-templates/auth/amplifyapptesta514770ae-cloudformation-template.yml",
-        "logicalId": "authamplifyapptesta514770ae"
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-amplifybackendtest-dev-11652-deployment/amplify-cfn-templates/auth/amplifybackendtest54ee5767-cloudformation-template.yml",
+        "logicalId": "authamplifybackendtest54ee5767"
       },
-      "lastPushTimeStamp": "2021-04-26T20:56:57.092Z",
+      "lastPushTimeStamp": "2021-04-27T00:31:20.908Z",
       "output": {
-        "UserPoolId": "us-east-2_AbS9JzLmi",
-        "AppClientIDWeb": "5vma05o2ok3irtpfboi36mhbor",
-        "AppClientID": "5bpeh2ep3sh9l8366pqfuj1jln",
-        "IdentityPoolId": "us-east-2:0c9698fc-57ab-42f7-89eb-14746ac0692b",
-        "IdentityPoolName": "amplifyapptesta514770ae_identitypool_514770ae__main",
-        "UserPoolName": "amplifyapptesta514770ae_userpool_514770ae"
+        "UserPoolId": "us-east-2_QvslqWHy3",
+        "AppClientIDWeb": "71qg3cnq44r4bb3jtq39odml5i",
+        "AppClientID": "3a9c45vpn47qq7cesagap63c3o",
+        "IdentityPoolId": "us-east-2:6d92184c-8c51-49cb-ac1a-4ae43daf5d6f",
+        "IdentityPoolName": "amplifybackendtest54ee5767_identitypool_54ee5767__dev",
+        "UserPoolName": "amplifybackendtest54ee5767_userpool_54ee5767"
       },
-      "lastPushDirHash": "AIJS0ovXY5zSzaKF9zpIcDGKW/c="
+      "lastPushDirHash": "BtPPWbESulI+0BqJsmUYxD4ei8w="
     }
-  },
-  "hosting": {}
+  }
 }
